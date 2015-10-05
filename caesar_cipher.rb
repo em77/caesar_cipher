@@ -22,4 +22,6 @@ def caesar_cipher(string, shift_factor)
   new_string
 end
 
-puts caesar_cipher("What a string!", 5)
+string = "What a string!"
+print "Plaintext: " + string
+puts "\nCiphertext: " + caesar_cipher(string, 5)
