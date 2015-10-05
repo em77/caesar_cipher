@@ -2,6 +2,7 @@ def caesar_cipher(string, shift_factor)
   alphabet = ("a".."z").to_a
   ciphered_alphabet = alphabet.dup
   new_string = ""
+  shift_factor = shift_factor % 25
   while shift_factor > 0
     ciphered_alphabet << ciphered_alphabet.shift
     shift_factor -= 1
